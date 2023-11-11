@@ -670,7 +670,40 @@ footer{
 
 /* responsive */
 
+@media (max-width: 2000px){
+    body{
+        height: 530vh;
+    }
+
+    .form-container{
+        height: 700px;
+    }
+
+    form {
+        height: 650px;
+        background-color: red;
+    }
+
+    .copyright{
+        top: 82.5%;
+    }
+
+
+}
+
 @media (max-width: 1700px){
+
+    body{
+        height: 550vh;
+    }
+
+    .form-container{
+        height: 540px;
+    }
+
+    form {
+        height: 600px;
+    }
 
     .foto-home--perfil{
         left: 150px;
@@ -1141,12 +1174,5 @@ footer{
     }
 
 }
-
-
-
-
-
-
-
 
 
