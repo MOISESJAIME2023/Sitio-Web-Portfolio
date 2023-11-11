@@ -1,0 +1,1152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 550vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, #bebebe, #aaa2cf, #9485dd, #7b68ea, #5d48f4, #5b46f2, #5845f1, #5643ef, #7160e1, #8779d1, #9992be, #aaaaaa);
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar{
+    width: 13px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #4a00e0;
+    border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #5643ef;
+}
+
+.menu{
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width: 80%;
+    left: 18%;
+    top: 20px;
+}
+
+.menu ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: right;
+}
+
+.menu ul li{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu a:hover{
+    color: rgb(7, 7, 7);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.cssbuttons-io {
+    position: relative;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+    height: 50px;
+    top: 15px;
+}
+  
+.cssbuttons-io svg {
+    width: 1em;
+    height: 1.2em;
+    margin-right: 0.5em;
+}
+  
+.cssbuttons-io span {
+    position: relative;
+    transition: color 0.8s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+}
+  
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.cssbuttons-io::before {
+    content: "";
+    background: #000000;
+    width: 120%;
+    left: -10%;
+    transform: skew(10deg);
+    transition: transform 0.7s cubic-bezier(0.3, 1, 0.8, 1);
+}
+  
+.cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+  
+.cssbuttons-io:active {
+    transform: scale(0.95);
+}
+
+.cssbuttons-io span a{
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    margin-left: -17px;
+    opacity: 0;
+}
+
+.nombre-moises{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    top: 20px;
+    text-align: center;
+    left: 40px;
+    font-weight: bold;
+}
+
+h4:first-letter { 
+    font-size: 160%; 
+    color: #200491ea; font-weight: bold; 
+}
+
+.home{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1, h2{
+    color: white;
+    display: flex;
+    position: relative;
+    width: 26%;
+    height: 10%;
+    top: 33%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;    
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+.home h2{
+    width: 500px;
+    background-color: #4a00e0;
+}
+
+.foto-home--perfil{
+    display: flex;
+    position: absolute;
+    height: 50%;
+    top: 100px;
+    left: 290px;
+    background-color: #0000001d;
+    border-radius: 20px 200px 770px 10px;
+    align-items: center;
+    top: 240px;
+}
+
+.img-foto{
+    border-radius: 100px 200px 80px 400px;
+    transition: 0.8s;
+    width: 350px;
+}
+
+.img-foto:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+    transition: 1.1s;
+}
+
+.acercade{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 107%;
+    justify-content: space-evenly;
+}
+
+.acercade h1{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    background-color: #4a00e0;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-perfil--dos{
+    width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-foto--dos{
+    height: 550px;
+    border-radius: 200% 200% 300% 300%;
+    width: 80%;
+    height: 500px;
+    transition: 2s;
+}
+
+.img-foto--dos:hover{
+    transform: scale(1.1);
+    border-radius: 15px;
+    transition: 0.5s;
+
+}
+
+.cards-container{
+    position: relative;
+    height: 550px;
+    top: 10%;
+}
+
+.cards--container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
+.acercade-parrafo{
+    width: 700px;
+    height: 150px;
+    color: whitesmoke;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.cards--container .card-uno, .card-dos, .card-tres{
+    width: 200px;
+    text-align: center;
+    height: 350px;
+}
+
+.card-uno{
+    display: grid;
+    text-align: center;
+    justify-items: center;
+}
+
+.card-uno img{
+    border-radius: 18px;
+    height: 90px;
+    width: 90px;
+}
+
+.card-uno h3{
+    margin-bottom: 30px;
+}
+
+.platzi{
+    color: white;
+    border: 0;
+    font-size: 19px;
+}
+
+.card-dos p, .card-tres p{
+    margin-top: 60px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.container-proyectos{
+    display: flex;
+    position: absolute;
+    top: 209%;
+    margin-top: 20px;
+}
+
+.container-proyectos p{
+    display: flex;
+    position: relative;
+    top: -26px;
+    color: rgba(0, 0, 0, 0.733);
+    font-family: Raleway, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardsproyectos{
+    display: flex;
+    height: 900px;
+    position: static;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.title-proyectos{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-family: "Raleway",sans-serif;
+    width: 100%;
+    justify-content: center;
+    font-size: 30px;
+    top: 60px;
+}
+
+.title-proyectos h1{
+    background-color: #4a00e0;
+    width: 300px;
+    text-align: center;
+}
+
+.cardsproyectos img{
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
+    background-color: rgba(255, 255, 255, 0.502);
+    width: 24%;
+    height: 65vh;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:  14px 14px 98px #1c1b5969, -20px -4px 98px #fafafa;
+}
+
+.card-proyecto-uno img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    opacity: 3;
+}
+
+.card-proyecto-dos img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    opacity: 3;
+}
+
+.card-proyecto-tres img:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+    opacity: 3;
+}
+
+.card-proyecto-uno h2, .card-proyecto-dos h2, .card-proyecto-tres h2{
+    width: 150px;
+    height: 50px;
+    left: 70px;
+    top: 200px;
+    opacity: 0.7;
+    color: #ffffffa8;
+    font-size: 25px;
+}
+
+.card-proyecto-uno h2:hover{
+    opacity: 0;
+}
+
+.container-servicios{
+    display: flex;
+    top: 330%;
+    height: 650px;
+    width: 100%;
+    position:absolute;
+    justify-content: center;
+}
+
+.servicios img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    position: sticky;
+    padding: 14px;
+    margin: 10px;
+}
+
+.servicios{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    justify-content: space-around;
+    top: 200px;
+}
+
+.card--webdisign, .card--uiuxdiseng, .card--appdisegn{
+    width: 400px;
+    color: rgba(0, 0, 0, 0.716);
+    font-family: "Raleway", sans-serif;
+    background-color: #ffffff50;
+    border-radius: 25px;
+    box-shadow:  19px 18px 98px #1c1b5969, -30px -4px 98px 10px #fafafa;
+    transition: 0.3s;
+    height: 400px;
+}
+
+.card--webdisign h3, .card--uiuxdiseng h3, .card--appdisegn h3{
+    color: rgba(0, 0, 0, 0.696);
+    height: 80px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+.card--webdisign p, .card--uiuxdiseng p, .card--appdisegn p{
+    display: flex;
+    height: 150px;
+    align-items: center;
+    font-size: 17px;
+}
+
+.title-servicios{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.title-servicios h1{
+    background-color: #4a00e0;
+    width: 270px;
+    text-align: center;
+}
+
+.card--webdisign:hover{
+    transform: scale(0.9);
+}
+
+.card--uiuxdiseng:hover{
+    transform: scale(0.9);
+}
+
+.card--appdisegn:hover{
+    transform: scale(0.9);
+}
+
+.toggle{
+    color: white;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.web{
+    display: block;
+    height: 300px;
+    position: relative;
+}
+
+.footer-descripcion a{
+    border: none;
+    text-decoration: none;
+}
+
+.bar{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.input{
+    height: 20px;
+    border-radius: 6px;
+}
+
+.input-desccripcion{
+    height: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient( 
+        355deg,
+        rgba(40,42,55,1) 10%,
+    rgba(40, 42, 55, 0.7)
+    ),
+    url(./icons/image/formimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 9px;
+    font-size: 20px;
+    align-items: center;
+    width: 700px;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+    position: relative;
+    top: 440vh;
+    justify-content: center;
+    height: 600px;
+}
+
+.input{
+    height: 35px;
+    width: 400px;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.429);
+}
+
+.input-desccripcion{
+    height: 50px;
+    width: 350px;
+    border-color: rgba(255, 255, 255, 0.429);
+    background-color: #2e2e2e;
+    border-radius: 10px;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.4;
+}
+
+label{
+    color: rgba(255, 255, 255, 0.485);
+    font-family: roboto, "sans-serif";
+}
+
+.enviar-form{
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: inherit;
+}
+
+.enviar-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+
+.enviar-form:hover {
+    color: #e8e8e8;
+}
+
+.enviar-form:hover::before {
+    width: 100%;
+}
+
+.contactame{
+    top: -30px;
+    left: 0;
+    color: rgba(143, 142, 142, 0.826);
+    width: 100%;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    top: 440vh;
+}
+
+.img-from img{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.form-container{
+    height: 600px;
+}
+
+.img-from{
+    display: flex;
+    position: relative;
+    left: 30%;
+    gap: 10px;
+    top: 30px;
+    padding: 6px;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+
+.img-from a{
+    border: none;
+}
+
+.copyright{
+    width: 150px;
+    height: 50px;
+    display: grid;
+    position: relative;
+    top: 81%;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-family: "raleway", sans-serif;
+    left: 86%;
+}
+
+/* responsive */
+
+@media (max-width: 1700px){
+
+    .foto-home--perfil{
+        left: 150px;
+        top: 160px;
+    }
+
+    .home{
+        top: 12%;
+    }
+
+    .home h1{
+        width: 40%;
+        font-size: 30px;
+        justify-content: left;
+        padding-left: 2px;
+        padding-top: 2px;
+    }
+
+    .cardsproyectos{
+        height: 600px;
+        padding-top: 100px;
+    }
+
+    .title-proyectos{
+        top: 40px;
+    }
+
+    .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
+        width: 28%;
+    }
+
+    .cardsproyectos img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .servicios{
+        height: 85%;
+    }
+
+    .acercade{
+        height: 650px;
+    }
+
+}
+
+@media (max-width: 1280px){
+
+    .container-servicios{
+        height: 700px;
+    }
+    
+    .servicios{
+        display: grid;
+        width: 85%;
+        top: 140px;
+        height: 550px;
+    }
+
+    .servicios img{
+        position: absolute;
+        left: 260px;
+        height: 65px;
+        width: 65px;
+        margin-top: 0px;
+    }
+
+    .servicios p{
+        height: 70px;
+    }
+
+    .card--webdisign, .card--appdisegn, .card--uiuxdiseng{
+        justify-self: center;
+        height: 150px;
+        width: 90%;
+        display: grid;
+        justify-items: center;
+    }
+
+    .card--webdisign:hover{
+        transform: none;
+    }
+
+    .card--appdisegn:hover{
+        transform: none;
+    }
+
+    .card--uiuxdiseng:hover{
+        transform: none;
+    }
+
+    .card--webdisign h3, .card--appdisegn h3, .card--uiuxdiseng h3{
+        width: 40%;
+        height: 50%;
+        top: 20px;
+    }
+
+    .title-servicios{
+        top: 10px;
+    }
+
+}
+
+@media (max-width: 1070px){
+
+    .foto-home--perfil{
+        left: 50px;
+    }
+
+    .foto-perfil--dos{
+        display: none;
+    }
+
+    .cards-container{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        height: 600px;
+    } 
+
+    .cards-container h1{
+        align-self: center;
+        width: 800px;
+    }
+
+    .acercade{
+        height: 700px;
+        text-align: center;
+    }
+
+    .acercade-parrafo{
+        justify-self: center;
+    }
+
+    .title-proyectos{
+        width: 80%;
+        justify-self: center;
+        background-color: #4a00e0;
+    }
+
+    .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
+        width: 30%;   
+    }
+
+    .container-proyectos{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cardsproyectos{
+        width: 100%;
+    }
+
+    .title-servicios{
+        width: 80%;
+        background-color: #4a00e0;
+    }
+
+}
+
+@media (max-width: 1020px){
+
+    .nombre-moises{
+        display: none;
+    }
+
+    .foto-home--perfil{
+        display: none;
+    }
+
+    .menu ul {
+        justify-content: center;
+    }
+
+    .menu{
+        width: 850px;
+        left: 30px;
+    }
+
+    .home h1, h2{
+        left: 270px;
+        justify-content: center;
+    }
+
+    .servicios img{
+        left: 200px;
+    }
+
+}
+
+@media (max-width: 915px) {
+
+    .menu{
+        width: auto;
+    }
+
+    .home h1, h2{
+        width: 500px;
+        justify-content: center;
+        left: 210px;
+    }
+
+    .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
+        width: 600px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .cardsproyectos h2{
+        top: 90px;
+        width: 250px;
+        left: 400px;
+        font-size: 20px;
+        height: 40px;
+    }
+
+    .cardsproyectos{
+        width: 600px;
+        display: grid;
+        height: 600px;
+    }
+
+    .cardsproyectos img{
+        display: none;
+    }
+
+    .servicios img{
+        left: 130px;
+    }
+
+}
+
+@media (max-width: 810px){
+
+    .nombre-moises{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        left: 250px;
+        color: white;
+        background-color: #4a00e0;
+        height: 50px;
+        width: 150px;
+        font-family: "roboto", sans-serif;
+    }
+
+    .acercade{
+        width: 630px;
+        left: 2px;
+    }
+
+    .acercade-parrafo{
+        max-width: 500px;
+    }
+
+    .cards--container{
+        width: 620px;
+    }
+
+    .cards-container h1{
+        width: 600px;
+        justify-self: center;
+    }
+
+    .home h1, h2{
+        left: 130px;
+        margin-bottom: 20px;
+    }
+
+    .toggle{
+        display: flex;
+        font-size: 60px;
+        height: 80px;
+        width: 50px;
+        left: 0;
+        position: absolute;
+        transition: 0.6s;        
+    }
+
+    .menu ul li{
+        height: 50px;
+    }
+
+    .menu ul{
+        width: 300px;
+        height: 300px;
+        align-items: center;
+        gap: 0;
+    }
+   
+    .menu{
+        height: 300px;
+        top: 10px;
+        width: 500px;
+        left: 102px;
+        justify-content: center;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        right: 100%;
+    }
+
+    .links li{
+        width: 300px;
+        justify-content: center;
+    }
+
+    .active{
+        left: 0;
+    }
+
+    .home{
+        top: 9%;
+    }
+
+    .home h2{
+        height: 50px;
+        width: 500px;
+        left: 100px;
+    }
+
+    .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
+        transition: 0.9s;
+    }
+
+    .card-proyecto-uno:hover{
+        transform: scale(0.9);
+        transition: 0.5s;
+    }
+
+    .card-proyecto-dos:hover{
+        transform: scale(0.9);
+        transition: 0.5s;
+    }
+
+    .card-proyecto-tres:hover{
+        transform: scale(0.9);
+        transition: 0.5s;
+    }
+
+}
+
+@media (max-width: 730px){
+
+    .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
+        width: 500px;
+    }
+
+    .cardsproyectos h2{
+        left: 300px;
+        top: 110px;
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 670px){
+    .card--webdisign img, .card--appdisegn img, .card--uiuxdiseng img{
+        display: none;
+    }
+}
+
+@media (max-width: 590px){
+
+
+    .toggle{
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        left: 50px;
+    }
+
+    .home{
+        width: 100%;
+        display: grid;
+        height: 200px;
+        top: 300px;
+        left: 0;
+    }
+
+    .home h2 {
+        left: 0;
+    }
+
+    .home h1{
+        left: 0;
+    }
+
+    .nombre-moises{
+        left: 350px;
+    }
+
+    .menu{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+    }
+
+    .active{
+        top: 20px;
+        left: 0;
+    }
+
+    .acercade{
+        width: 100%;
+    }
+
+    .card-uno img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .card-uno{
+        display: grid;
+        font-size: 15px;
+    }
+
+    .card-dos, .card-tres{
+        width: 160px;
+        font-size: 15px;
+    }
+
+    .cards-container{
+        top: 9%;
+    }
+
+    .cards-container h1{
+        width: 400px;
+    }
+
+    .cards--container{
+        width: 450px;
+    }
+
+    .container-proyectos{
+        top: 210%;
+        width: 500px;
+    }
+
+    .cardsproyectos{
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .container-servicios{
+        top: 325%;
+    }
+
+    .card--webdisign, .card--appdisegn, .card--uiuxdiseng{
+        height: 165px;
+    }
+
+    .card--webdisign p, .card--appdisegn p, .card--uiuxdiseng p{
+        font-size: 15px;
+    }
+
+    .web{
+        top: 400px;
+        transition: .5s;
+    }
+
+    .cardsproyectos h2{
+        width: 190px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
