@@ -895,7 +895,7 @@ footer{
 
 }
 
-@media (max-width: 915px) {
+@media (max-width: 935px) {
 
     .menu{
         width: auto;
@@ -933,6 +933,10 @@ footer{
 
     .servicios img{
         left: 130px;
+    }
+
+    .copyright{
+        left: 650px;
     }
 
 }
