@@ -748,6 +748,11 @@ footer{
         height: 650px;
     }
 
+    .copyright{
+        left: 83%;
+        top: 84%;
+    }
+
 }
 
 @media (max-width: 1280px){
@@ -1069,6 +1074,10 @@ footer{
         font-size: 10px;
     }
 
+    .nombre-moises{
+        left: 400px;
+    }
+
 }
 
 @media (max-width: 670px){
@@ -1078,7 +1087,7 @@ footer{
 
 }
 
-@media (max-width: 590px){
+@media (max-width: 620px){
 
 
     .toggle{
@@ -1199,7 +1208,7 @@ footer{
 
 }
 
-@media (max-width: 470px){
+@media (max-width: 510px){
 
     body{
         height: 518vh;
@@ -1305,5 +1314,77 @@ footer{
         width: 300px;
     }
 
+    .copyright{
+        top: 86.5%;
+        left: 280px;
+    }
+
 }
 
+@media (max-width: 480px){
+    body{
+        height: 520vh;
+    }
+
+    .copyright{
+        top: 86.3%;
+    }
+
+}
+
+@media (max-width: 440px){
+
+    body{
+        height: 530vh;
+    }
+
+    .nombre-moises{
+        left: 200px;
+    }
+
+    .cards-container h1{
+        width: 85%;
+    }
+
+    .cards-container{
+        width: 100%;
+    }
+
+    .cardsproyectos{
+        width: 98%;
+    }
+
+    .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
+        width: 100%;
+    }
+
+    .copyright{
+        left: 200px;
+        top: 86%;
+    }
+
+
+}
+
+@media (max-width: 400px){
+
+    .cardsproyectos h2{
+        left: 170px;
+        top: 150px;
+    }
+
+    .cards--container{
+        width: 85%;
+    }
+
+    .nombre-moises{
+        left: 180px;
+    }
+
+    .copyright{
+        left: 170px;
+    }
+
+
+
+}
