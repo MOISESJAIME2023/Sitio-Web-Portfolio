@@ -1197,6 +1197,10 @@ footer{
 
 @media (max-width: 470px){
 
+    body{
+        height: 518vh;
+    }
+
     .nombre-moises{
         left: 60%;
     }
@@ -1206,24 +1210,35 @@ footer{
     }
 
     .home h2{
-        width: 70%;
+        width: 90%;
         height: 100px;
     }
 
     .home h1{
-        gap: 10px;
+        height: 50px;
+        width: 90%;
     }
 
     .acercade{
-        width: 100%;
+        width: 98%;
     }
 
     .acercade-parrafo{
-        width: 400px;
+        width: 360px;
+    }
+
+    .card-uno, .card-dos, .card-tres{
+        width: 100%;
     }
 
     .cards--container{
-        width: 400px;
+        width: 90%;
+        position: relative;
+        justify-self: center;
+    }
+
+    .cards-container{
+        width: 90%;
     }
 
     .title-proyectos{
@@ -1240,7 +1255,7 @@ footer{
     }
 
     .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
-        width: 410px;
+        width: 390px;
         height: 200px;
     }
 
@@ -1249,8 +1264,29 @@ footer{
         top: 140px;
     }
 
+    .card--webdisign h3, .card--uiuxdiseng h3, .card--appdisegn h3{
+        font-size: 22px;
+        width: 300px;
+    }
+
+    .card--webdisign p, .card--uiuxdiseng p, .card--appdisegn p{
+        font-size: 13px;
+        text-align: center;
+        height: 100px;
+        padding: 20px;
+    }
+
+    .container-servicios{
+        width: 98%;
+    }
+
+    .container-proyectos{
+        width: 98%;
+    }
+
     .copyright{
         left: 230px;
+        top: 87%;
     }
 
     form{
@@ -1265,8 +1301,5 @@ footer{
         width: 300px;
     }
 
-
 }
-
-
 
