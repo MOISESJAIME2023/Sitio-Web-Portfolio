@@ -10,3 +10,12 @@ toggle.addEventListener("click", () => {
     home.classList.toggle("web")
     nombre.classList.toggle("bar")
 })
+
+function confirmacion(){
+    var respuesta = confirm ("¿Enviar formulario?");
+    if (respuesta == true){
+        return true;
+    }else{
+        return false;
+    }
+}
