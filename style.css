@@ -682,7 +682,6 @@ footer{
 
     form {
         height: 650px;
-        background-color: red;
     }
 
     .copyright{
@@ -692,7 +691,7 @@ footer{
 
 }
 
-@media (max-width: 1700px){
+@media (max-width: 1700px) and (max-height: 1500px) {
 
     body{
         height: 550vh;
@@ -724,7 +723,7 @@ footer{
     }
 
     .cardsproyectos{
-        height: 600px;
+        height: 800px;
         padding-top: 100px;
     }
 
@@ -732,13 +731,19 @@ footer{
         top: 40px;
     }
 
+    .container-proyectos{
+        height: 900px;
+    }
+
     .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
         width: 28%;
+        height: 80%;
     }
 
     .cardsproyectos img{
-        height: 250px;
+        height: 320px;
         width: 250px;
+        margin-top: 20px;
     }
 
     .servicios{
@@ -751,7 +756,7 @@ footer{
 
     .copyright{
         left: 83%;
-        top: 84%;
+        top: 82%;
     }
 
 }
@@ -882,7 +887,7 @@ footer{
     }
 
     .menu ul {
-        justify-content: center;
+        justify-content: end;
     }
 
     .menu{
@@ -1063,8 +1068,12 @@ footer{
 
 }
 
-@media (max-width: 770px){
+@media (max-width: 770px) and (max-height: 1100px) {
     
+    body{
+        height: 480vh;
+    }
+
     .nombre-moises{
         left: 500px;
     }
@@ -1072,9 +1081,34 @@ footer{
     .home h2{
         left: 130px;
     }
+    
+    .acercade{
+        align-items: center;
+        width: 98%;
+    }
+
+    .container-proyectos{
+        height: 700px;
+    }
+
+    .container-servicios{
+        height: 700px;
+        top: 310%;
+    }
+
+    .form-container{
+        top: 84%;
+    }
+
+    .copyright{
+        top: 85.4%;
+    }
+
+
+
 }
 
-@media (max-width: 730px){
+@media (max-width: 730px) {
 
     .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
         width: 500px;
@@ -1348,14 +1382,40 @@ footer{
 
 }
 
-@media (max-width: 440px){
+@media (max-width: 440px) and (max-height: 1000px){
 
     body{
-        height: 530vh;
+        height: 500vh;
     }
 
     .nombre-moises{
         left: 200px;
+        border-radius: 10px;
+    }
+
+    .home h2{
+        width: 98%;
+        height: 130px;
+        left: 0;
+        border-radius: 10px;
+    }
+
+    .home h1{
+        top: 80px;
+    }
+
+    .acercade h1{
+        border-radius: 10px;
+    }
+
+    .title-proyectos{
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .title-proyectos h1{
+        border-radius: 10px;
+        width: 100%;
     }
 
     .cards-container h1{
@@ -1372,12 +1432,33 @@ footer{
 
     .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
         width: 100%;
+        position: relative;
+        left: 10px;
     }
 
     .copyright{
         left: 200px;
         top: 86%;
     }
+
+    .title-servicios{
+        border-radius: 10px;
+    }
+
+
+    .container-servicios{
+        height: 80%;
+        top: 325%;
+    }
+
+    .servicios{
+        height: 80%;
+    }
+
+    .form-container{
+        top: 84%;
+    }
+
 
 
 }
@@ -1405,7 +1486,7 @@ footer{
 
 }
 
-@media (max-width: 400px) and (max-height: 700px){
+@media (max-width: 430px) and (max-height: 800px){
 
     body{
         height: 540vh;
@@ -1457,7 +1538,7 @@ footer{
 
 }
 
-@media (max-width: 380px){
+@media (max-width: 380px) and (max-height: 800px){
 
     body{
         height: 530vh;
@@ -1503,9 +1584,31 @@ footer{
         top: 79%;
     }
 
+    .card-proyecto-uno h2, .card-proyecto-dos h2, .card-proyecto-tres h2{
+        left: 180px;
+        top: 130px;
+    }
+
+    .cardsproyectos{
+        position: relative;
+    }
+
+    .card--appdisegn p, .card--uiuxdiseng p, .card--webdisign p{
+        left: 0;
+    }
+
+    .card--appdisegn, .card--uiuxdiseng, .card--webdisign{
+        width: 100%;
+    } 
+
+    .copyright{
+        left: 170px;
+    }
+
+
 }
 
-@media (max-width: 310px){
+@media (max-width: 350px){
 
     .toggle{
         left: 10px;
@@ -1535,8 +1638,101 @@ footer{
         left: 150px;
     }
 
+    .cards--container{
+        width: 300px;
+    }
+
+    .acercade h1{
+        left: 0;
+        width: 300px;
+    }
+
+    .acercade-parrafo{
+        width: 280px;
+    }
+
+    form{
+        width: 280px;
+    }
+
+    .input{
+        width: 200px;
+    }
+
+    .input-desccripcion{
+        width: 250px;
+    }
+
+    .img-from{
+        left: 0;
+    }
 
 }
+
+@media (max-width: 300px){
+
+    .menu{
+        width: 96%;
+    }
+
+    .nombre-moises{
+        left: 130px;
+    }
+
+    .cards-container{
+        width: 96%;
+    }
+
+    .acercade{
+        width: 98%;
+        height: 800px;
+    }
+
+    .acercade h1{
+        width: 280px;
+    }
+
+    .cards--container{
+        width: 70%;
+        height: 100%;
+    }
+
+    .card-uno, .card-dos, .card-tres{
+        font-size: 14px;
+    }
+
+    .title-proyectos{
+        width: 280px;
+    }
+
+    .title-proyectos h1{
+        width: 90%;
+    }
+
+    .card-proyecto-uno h2, .card-proyecto-dos h2, .card-proyecto-tres h2{
+        left: 70px;
+    }
+
+    .card-proyecto-uno p, .card-proyecto-dos p, .card-proyecto-tres p{
+        font-size: 13px;
+    }
+
+    .form-container{
+        width: 98%;
+        height: 14.7%;
+    }
+
+    .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
+        left: 6px;        
+    }
+
+    .copyright{
+        left: 70px;
+    }
+
+
+}
+
 
 
 
