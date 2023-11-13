@@ -1733,6 +1733,44 @@ footer{
 
 }
 
+@media (max-width: 280px){
 
+    .menu{
+        width: 96%;
+    }
 
+    .nombre-moises{
+        left: 100px;
+    }
+
+    .cards-container h1{
+        width: 230px;
+        font-size: 40px;
+    }
+
+    .acercade-parrafo{
+        width: 250px;
+        font-size: 13px;
+        padding: 14px;
+    }
+
+    .title-proyectos{
+        width: 230px;
+        font-size: 22px;
+    }
+
+    .title-servicios{
+        width: 100%;
+    }
+
+    .title-servicios h1{
+        width: 240px;
+        font-size: 45px;
+    }
+
+    .copyright{
+        top: 83.7%;
+    }
+
+}
 
