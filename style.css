@@ -1832,9 +1832,8 @@ footer{
 
 @media (max-width: 250px){
 
-
     body{
-        height: 500vh;
+        height: 520vh;
     }
 
     .menu{
@@ -2059,3 +2058,40 @@ footer{
 
 }
 
+@media (max-width: 190px){
+
+    body{
+        height: 500vh;
+    }
+
+    .cards-container{
+        top: 20%;
+    }
+
+    .acercade{
+        height: 100%;
+    }
+
+    .container-proyectos{
+        top: 180%;
+    }
+
+    .container-proyectos{
+        top: 207%;
+    }
+
+    .container-servicios{
+        top: 320%;
+    }
+
+    .form-container{
+        top: 83%;
+    }
+
+    .copyright{
+        top: 82%;
+    }
+
+
+
+}
