@@ -320,6 +320,7 @@ h4:first-letter {
     font-family: Raleway, sans-serif;
     font-size: 15px;
     font-weight: bold;
+    padding: 10px;
 }
 
 .cardsproyectos{
@@ -738,6 +739,10 @@ footer{
     .card-proyecto-uno, .card-proyecto-dos, .card-proyecto-tres{
         width: 28%;
         height: 80%;
+    }
+
+    .card-proyecto-uno h2, .card-proyecto-dos h2, .card-proyecto-tres h2{
+        left: 100px;
     }
 
     .cardsproyectos img{
@@ -1975,6 +1980,80 @@ footer{
     .copyright{
         top: 80%;
         left: 30px;
+    }
+
+
+}
+
+@media (max-width: 200px){
+    
+    body{
+        height: 400vh;
+    }
+
+    .nombre-moises{
+        font-size: 20px;
+        width: 80px;
+    }
+
+    .home{
+        height: auto;
+    }
+
+    .acercade{
+        top: 90%;
+    }
+
+    .container-proyectos{
+        top: 165%;
+    }
+
+    .card-proyecto-uno p, .card-proyecto-dos p, .card-proyecto-tres p{
+        height: 200px;
+        font-size: 11px;
+        height: auto;
+    }
+
+    .title-proyectos h1{
+        width: 100%;
+        font-size: 33px;
+    }
+
+    .cards-container h1{
+        font-size: 33px;
+        width: 160px;
+    }
+
+    .acercade-parrafo{
+        width: 98%;
+        padding: 0;
+    }
+
+    .container-servicios{
+        top: 265%;
+    }
+
+    .form-container{
+        top: 84%;
+    }
+
+    .input{
+        width: 140px;
+    }
+
+    .input-desccripcion{
+        width: 140px;
+    }
+
+    .img-from{
+        width: 90%;
+    }
+
+    .copyright{
+        justify-content: center;
+        width: 100%;
+        left: 0;
+        top: 84%;
     }
 
 
